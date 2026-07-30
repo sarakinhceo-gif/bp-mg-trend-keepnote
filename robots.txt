@@ -2,3 +2,4 @@ User-agent: *
 Allow: /
 
 Sitemap: https://trend.keepnote.shop/sitemap.xml
+Sitemap: https://trend.keepnote.shop/sitemap-pages.xml
