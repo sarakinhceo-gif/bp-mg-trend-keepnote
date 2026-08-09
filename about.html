@@ -1,234 +1,232 @@
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>소개 | 합정 트렌드 서포터</title>
-    <meta name="description" content="합정 셔츠룸 핫플 매거진 운영자 소개. 7년간 200여 곳 방문, 데이터 기반 리뷰와 업계 인사이트를 제공합니다.">
-    <meta name="keywords" content="합정 셔츠룸, 합정 트렌드 서포터, 소개, 운영자, 전문 리뷰어, 강서 셔츠룸, 마곡 셔츠룸, 화곡 셔츠룸, 등촌 셔츠룸">
-    <meta name="telephone" content="010-6279-0862">
-    <meta name="bpaas-design-system" content="editorial-apple">
-    <meta name="bpaas-design-theme" content="kr-mono-chrome">
-    <link rel="canonical" href="https://trend.keepnote.shop/about.html">
-    <meta property="og:title" content="소개 | 합정 트렌드 서포터">
-    <meta property="og:description" content="합정 셔츠룸 핫플 매거진 운영자 소개. 7년간 200여 곳 방문, 데이터 기반 리뷰와 업계 인사이트를 제공합니다.">
-    <meta property="og:image" content="https://trend.keepnote.shop/og-image.jpg">
-    <meta property="og:url" content="https://trend.keepnote.shop/about.html">
-    <meta property="og:type" content="website">
-    <meta name="twitter:card" content="summary">
-    <meta name="twitter:title" content="소개 | 합정 셔츠룸 단골들이 뽑은 핫플 매거진">
-    <meta name="twitter:description" content="합정 트렌드 서포터 운영자 소개. 200곳 이상 방문 데이터 기반의 신뢰할 수 있는 리뷰를 제공합니다.">
-    <meta name="twitter:image" content="https://trend.keepnote.shop/og-image.jpg">
-    <style>
-        * { margin: 0; padding: 0; box-sizing: border-box; }
-        body { font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', sans-serif; background: #f8f8f8; color: #1a1a1a; line-height: 1.7; }
-        .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
-        header { background: #fff; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
-        .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
-        .site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; color: #000; text-decoration: none; }
-        .site-title a { color: #000; text-decoration: none; }
-        nav { background: #fff; }
-        .nav-inner { display: flex; justify-content: center; padding: 12px 0; }
-        .nav-links { display: flex; gap: 32px; list-style: none; }
-        .nav-links a { text-decoration: none; color: #333; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.3px; }
-        .nav-links a:hover { color: #000; }
-        .hamburger { display: none; flex-direction: column; cursor: pointer; background: none; border: none; padding: 4px; }
-        .hamburger span { width: 24px; height: 2px; background: #000; margin: 4px 0; transition: 0.3s; }
-        .hero { background: #fff; padding: 80px 0 60px; text-align: center; }
-        .hero h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
-        .hero p { font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto; }
-        @media (max-width: 768px) {
-            .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 16px 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
-            .nav-links.active { display: flex; }
-            .nav-links a { padding: 8px 0; }
-            .hamburger { display: flex; }
-            .hero h1 { font-size: 1.8rem; }
-            .hero { padding: 50px 0 40px; }
-        }
-        section { padding: 60px 0; }
-        h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.5px; }
-        h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; }
-        .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
-        @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; gap: 24px; } }
-        .card { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
-        .stat-row { display: flex; gap: 24px; margin: 40px 0; flex-wrap: wrap; justify-content: center; }
-        .stat-item { text-align: center; background: #fff; padding: 24px 32px; border-radius: 12px; min-width: 140px; flex: 1; }
-        .stat-number { font-size: 2.2rem; font-weight: 700; color: #000; }
-        .stat-label { font-size: 0.9rem; color: #666; margin-top: 4px; }
-        .faq { margin-top: 40px; }
-        .faq-item { border-bottom: 1px solid #e0e0e0; padding: 20px 0; }
-        .faq-question { font-weight: 600; font-size: 1.05rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
-        .faq-answer { margin-top: 12px; color: #555; line-height: 1.6; display: none; }
-        .faq-answer.active { display: block; }
-        footer { background: #1a1a1a; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.85rem; }
-        footer a { color: #ccc; text-decoration: none; }
-        footer a:hover { color: #fff; }
-    </style>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>소개 | 합정 트렌드 서포터</title>
+ <meta name="description" content="합정 셔츠룸 핫플 매거진 운영자 소개. 7년간 200여 곳 방문, 데이터 기반 리뷰와 업계 인사이트를 제공합니다.">
+ <meta name="keywords" content="합정 셔츠룸, 합정 트렌드 서포터, 소개, 운영자, 전문 리뷰어, 강서 셔츠룸, 마곡 셔츠룸, 화곡 셔츠룸, 등촌 셔츠룸">
+ <meta name="telephone" content="010-6279-0862">
+ <link rel="canonical" href="https://trend.keepnote.shop/about.html">
+ <meta property="og:title" content="소개 | 합정 트렌드 서포터">
+ <meta property="og:description" content="합정 셔츠룸 핫플 매거진 운영자 소개. 7년간 200여 곳 방문, 데이터 기반 리뷰와 업계 인사이트를 제공합니다.">
+ <meta property="og:image" content="https://trend.keepnote.shop/og-image.jpg">
+ <meta property="og:url" content="https://trend.keepnote.shop/about.html">
+ <meta property="og:type" content="website">
+ <meta name="twitter:card" content="summary">
+ <meta name="twitter:title" content="소개 | 합정 셔츠룸 단골들이 뽑은 핫플 매거진">
+ <meta name="twitter:description" content="합정 트렌드 서포터 운영자 소개. 200곳 이상 방문 데이터 기반의 신뢰할 수 있는 리뷰를 제공합니다.">
+ <meta name="twitter:image" content="https://trend.keepnote.shop/og-image.jpg">
+ <style>
+ * { margin: 0; padding: 0; box-sizing: border-box; }
+ body { font-family: 'Helvetica Neue', 'Apple SD Gothic Neo', sans-serif; background: #f8f8f8; color: #1a1a1a; line-height: 1.7; }
+ .container { max-width: 1100px; margin: 0 auto; padding: 0 24px; }
+ header { background: #fff; border-bottom: 1px solid #e0e0e0; position: sticky; top: 0; z-index: 100; }
+ .header-inner { display: flex; justify-content: space-between; align-items: center; padding: 16px 0; }
+ .site-title { font-size: 1.4rem; font-weight: 700; letter-spacing: -0.5px; color: #000; text-decoration: none; }
+ .site-title a { color: #000; text-decoration: none; }
+ nav { background: #fff; }
+ .nav-inner { display: flex; justify-content: center; padding: 12px 0; }
+ .nav-links { display: flex; gap: 32px; list-style: none; }
+ .nav-links a { text-decoration: none; color: #333; font-size: 0.95rem; font-weight: 500; transition: color 0.2s; letter-spacing: 0.3px; }
+ .nav-links a:hover { color: #000; }
+ .hamburger { display: none; flex-direction: column; cursor: pointer; background: none; border: none; padding: 4px; }
+ .hamburger span { width: 24px; height: 2px; background: #000; margin: 4px 0; transition: 0.3s; }
+ .hero { background: #fff; padding: 80px 0 60px; text-align: center; }
+ .hero h1 { font-size: 2.6rem; font-weight: 700; letter-spacing: -1px; margin-bottom: 16px; }
+ .hero p { font-size: 1.1rem; color: #555; max-width: 700px; margin: 0 auto; }
+ @media (max-width: 768px) {
+ .nav-links { display: none; flex-direction: column; position: absolute; top: 100%; left: 0; right: 0; background: #fff; padding: 16px 24px; box-shadow: 0 4px 12px rgba(0,0,0,0.08); }
+ .nav-links.active { display: flex; }
+ .nav-links a { padding: 8px 0; }
+ .hamburger { display: flex; }
+ .hero h1 { font-size: 1.8rem; }
+ .hero { padding: 50px 0 40px; }
+ }
+ section { padding: 60px 0; }
+ h2 { font-size: 1.8rem; font-weight: 700; margin-bottom: 32px; letter-spacing: -0.5px; }
+ h3 { font-size: 1.2rem; font-weight: 600; margin-bottom: 12px; }
+ .grid-2 { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; }
+ @media (max-width: 768px) { .grid-2 { grid-template-columns: 1fr; gap: 24px; } }
+ .card { background: #fff; padding: 32px; border-radius: 12px; box-shadow: 0 2px 8px rgba(0,0,0,0.04); }
+ .stat-row { display: flex; gap: 24px; margin: 40px 0; flex-wrap: wrap; justify-content: center; }
+ .stat-item { text-align: center; background: #fff; padding: 24px 32px; border-radius: 12px; min-width: 140px; flex: 1; }
+ .stat-number { font-size: 2.2rem; font-weight: 700; color: #000; }
+ .stat-label { font-size: 0.9rem; color: #666; margin-top: 4px; }
+ .faq { margin-top: 40px; }
+ .faq-item { border-bottom: 1px solid #e0e0e0; padding: 20px 0; }
+ .faq-question { font-weight: 600; font-size: 1.05rem; cursor: pointer; display: flex; justify-content: space-between; align-items: center; }
+ .faq-answer { margin-top: 12px; color: #555; line-height: 1.6; display: none; }
+ .faq-answer.active { display: block; }
+ footer { background: #1a1a1a; color: #aaa; padding: 40px 0; text-align: center; font-size: 0.85rem; }
+ footer a { color: #ccc; text-decoration: none; }
+ footer a:hover { color: #fff; }
+ </style>
 </head>
 <body>
-    <header>
-        <div class="container header-inner">
-            <div class="site-title"><a href="/">합정 트렌드 서포터</a></div>
-            <button class="hamburger" aria-label="메뉴 열기">
-                <span></span><span></span><span></span>
-            </button>
-        </div>
-        <nav>
-            <div class="container nav-inner">
-                <ul class="nav-links">
-                    <li><a href="/">홈</a></li>
-                    <li><a href="/소개">소개</a></li>
-                    <li><a href="/리뷰">리뷰</a></li>
-                    <li><a href="/추천">추천</a></li>
-                    <li><a href="/문의">문의</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+ <header>
+ <div class="container header-inner">
+ <div class="site-title"><a href="/">합정 트렌드 서포터</a></div>
+ <button class="hamburger" aria-label="메뉴 열기">
+ <span></span><span></span><span></span>
+ </button>
+ </div>
+ <nav>
+ <div class="container nav-inner">
+ <ul class="nav-links">
+ <li><a href="/">홈</a></li>
+ <li><a href="/소개">소개</a></li>
+ <li><a href="/리뷰">리뷰</a></li>
+ <li><a href="/추천">추천</a></li>
+ <li><a href="/문의">문의</a></li>
+ </ul>
+ </div>
+ </nav>
+ </header>
 
-    <section class="hero">
+ <section class="hero">
 
 <!-- SEO Visual 1: 합정 셔츠룸 단골들이 뽑은 핫플 매거진 Editorial Apple Hero -->
-<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 —  합정 셔츠룸 단골들이 뽑은 핫플 매거진" 
-     style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
-  <div style="max-width:800px;margin:0 auto">
-    <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
-    <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">합정 셔츠룸 단골들이 뽑은 핫플 매거진</div>
-    <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">신뢰할 수 있는 서비스에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
-  </div>
-  <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"합정 셔츠룸 단골들이 뽑은 핫플 매거진","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
+<div class="seo-visual-hero" role="img" aria-label="신뢰할 수 있는 서비스 — 합정 셔츠룸 단골들이 뽑은 핫플 매거진" 
+ style="width:100%;padding:64px 24px;background:#faf9f6;border-bottom:1px solid #e5e5e0;text-align:left;margin:32px 0">
+ <div style="max-width:800px;margin:0 auto">
+ <div style="font-family:serif;font-size:0.9rem;text-transform:uppercase;letter-spacing:0.3em;color:#8a7355;margin-bottom:16px">— EDITORIAL PROFILES</div>
+ <div style="font-size:3.5em;line-height:1.1;font-weight:400;font-family:serif;color:#1c1c1e;letter-spacing:-0.03em;margin-bottom:16px">합정 셔츠룸 단골들이 뽑은 핫플 매거진</div>
+ <p style="font-size:1.05rem;line-height:1.6;color:#1c1c1e;opacity:0.85;max-width:600px">신뢰할 수 있는 서비스에 관한 독립적이고 깊이 있는 정보를 제공합니다.</p>
+ </div>
+ <script type="application/ld+json">{"@context":"https://schema.org","@type":"ImageObject","name":"합정 셔츠룸 단골들이 뽑은 핫플 매거진","description":"신뢰할 수 있는 서비스","contentUrl":"data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22/>"}</script>
 </div>
-        <div class="container">
-            <h1>신뢰할 수 있는 데이터 기반 리뷰</h1>
-            <p>2018년부터 합정 · 강서 · 마곡 · 화곡 · 등촌 지역 셔츠룸을 직접 방문, 객관적 지표로 평가해온 전문 리서처입니다.</p>
-        </div>
-    </section>
+ <div class="container">
+ <h1>신뢰할 수 있는 데이터 기반 리뷰</h1>
+ <p>2018년부터 합정 · 강서 · 마곡 · 화곡 · 등촌 지역 셔츠룸을 직접 방문, 객관적 지표로 평가해온 전문 리서처입니다.</p>
+ </div>
+ </section>
 
 <!-- SEO Visual 2: 합정 트렌드 서포터 Cardless Editorial List -->
 <div class="seo-visual-cards" role="img" aria-label="합정 셔츠룸 단골들이 뽑은 핫플 매거진 합정 트렌드 서포터 — 신뢰할 수 있는 서비스" 
-     style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
-  <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">SEO 대책</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
-  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">집객 지원</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
-  </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
-    <div style="display:flex;align-items:center;gap:24px">
-      <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
-      <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">분석</span>
-    </div>
-    <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
-  </div>
+ style="display:flex;flex-direction:column;gap:0;margin:40px 0;border-top:1px solid #e5e5e0;border-bottom:1px solid #e5e5e0;background:#faf9f6">
+ <div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+ <div style="display:flex;align-items:center;gap:24px">
+ <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 01 ]</span>
+ <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">SEO 대책</span>
+ </div>
+ <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
+ </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:1px solid #e5e5e0;background:transparent">
+ <div style="display:flex;align-items:center;gap:24px">
+ <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 02 ]</span>
+ <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">집객 지원</span>
+ </div>
+ <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
+ </div><div style="display:flex;align-items:center;justify-content:space-between;padding:24px 16px;border-bottom:none;background:transparent">
+ <div style="display:flex;align-items:center;gap:24px">
+ <span style="font-family:monospace;font-size:1rem;color:#8a7355;letter-spacing:0.05em;font-weight:500">[ 03 ]</span>
+ <span style="font-family:serif;font-weight:400;font-size:1.2rem;color:#1c1c1e;letter-spacing:-0.02em">분석</span>
+ </div>
+ <span style="font-family:sans-serif;font-size:0.8rem;letter-spacing:0.1em;text-transform:uppercase;color:#8a7355;font-weight:600">합정 셔츠룸 단골들이 뽑은 핫플 매거진</span>
+ </div>
 </div>
 
-    <section>
-        <div class="container">
-            <div class="stat-row">
-                <div class="stat-item">
-                    <div class="stat-number">200+</div>
-                    <div class="stat-label">방문한 업소</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">38</div>
-                    <div class="stat-label">평가 항목</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">7년</div>
-                    <div class="stat-label">운영 경력</div>
-                </div>
-                <div class="stat-item">
-                    <div class="stat-number">98%</div>
-                    <div class="stat-label">정확도</div>
-                </div>
-            </div>
+ <section>
+ <div class="container">
+ <div class="stat-row">
+ <div class="stat-item">
+ <div class="stat-number">200+</div>
+ <div class="stat-label">방문한 업소</div>
+ </div>
+ <div class="stat-item">
+ <div class="stat-number">38</div>
+ <div class="stat-label">평가 항목</div>
+ </div>
+ <div class="stat-item">
+ <div class="stat-number">7년</div>
+ <div class="stat-label">운영 경력</div>
+ </div>
+ <div class="stat-item">
+ <div class="stat-number">98%</div>
+ <div class="stat-label">정확도</div>
+ </div>
+ </div>
 
-            <div class="grid-2">
-                <div class="card">
-                    <h3>운영 철학</h3>
-                    <p>단순한 방문기가 아닌, 38개 항목의 정량 평가와 3회 이상 재방문을 통한 데이터 검증을 까탕으로 리뷰를 작성합니다. 모든 평점은 객관적 기준에 따라 산출되며, 광고성 콘텐츠를 배제합니다.</p>
-                </div>
-                <div class="card">
-                    <h3>전문성</h3>
-                    <p>업계 종사자 인터뷰, 시설 기준 분석, 서비스 프로세스 연구를 병행하여 단순 소비자 시각을 넘어선 인사이트를 제공합니다. 지역별 트렌드 변화를 추적하고 데이터베이스화하고 있습니다.</p>
-                </div>
-            </div>
+ <div class="grid-2">
+ <div class="card">
+ <h3>운영 철학</h3>
+ <p>단순한 방문기가 아닌, 38개 항목의 정량 평가와 3회 이상 재방문을 통한 데이터 검증을 까탕으로 리뷰를 작성합니다. 모든 평점은 객관적 기준에 따라 산출되며, 광고성 콘텐츠를 배제합니다.</p>
+ </div>
+ <div class="card">
+ <h3>전문성</h3>
+ <p>업계 종사자 인터뷰, 시설 기준 분석, 서비스 프로세스 연구를 병행하여 단순 소비자 시각을 넘어선 인사이트를 제공합니다. 지역별 트렌드 변화를 추적하고 데이터베이스화하고 있습니다.</p>
+ </div>
+ </div>
 
-            <div style="margin-top: 48px;">
-                <h2>주요 활동 내역</h2>
-                <div class="grid-2">
-                    <div class="card">
-                        <h3>2018-2020</h3>
-                        <p>합정 지역 70여 곳 기초 조사, 평가 프레임워크 개발. 최초의 체계적 리뷰 시스템 구축.</p>
-                    </div>
-                    <div class="card">
-                        <h3>2021-2023</h3>
-                        <p>강서·마곡·화곡·등촌 지역 확장 조사. 130곳 추가 방문, 업소별 프로파일링 완료.</p>
-                    </div>
-                    <div class="card">
-                        <h3>2024-현재</h3>
-                        <p>데이터 기반 추천 시스템 고도화. 분기별 트렌드 리포트 발간, 업계 컨설팅 제공.</p>
-                    </div>
-                    <div class="card">
-                        <h3>핵심 성과</h3>
-                        <p>리뷰 정확도 98%, 재방문율 85% 이상. 500명 이상의 구독자 피드백 기반 지속 개선.</p>
-                    </div>
-                </div>
-            </div>
+ <div style="margin-top: 48px;">
+ <h2>주요 활동 내역</h2>
+ <div class="grid-2">
+ <div class="card">
+ <h3>2018-2020</h3>
+ <p>합정 지역 70여 곳 기초 조사, 평가 프레임워크 개발. 최초의 체계적 리뷰 시스템 구축.</p>
+ </div>
+ <div class="card">
+ <h3>2021-2023</h3>
+ <p>강서·마곡·화곡·등촌 지역 확장 조사. 130곳 추가 방문, 업소별 프로파일링 완료.</p>
+ </div>
+ <div class="card">
+ <h3>2024-현재</h3>
+ <p>데이터 기반 추천 시스템 고도화. 분기별 트렌드 리포트 발간, 업계 컨설팅 제공.</p>
+ </div>
+ <div class="card">
+ <h3>핵심 성과</h3>
+ <p>리뷰 정확도 98%, 재방문율 85% 이상. 500명 이상의 구독자 피드백 기반 지속 개선.</p>
+ </div>
+ </div>
+ </div>
 
-            <div class="faq">
-                <h2>자주 묻는 질문</h2>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
-                        리뷰는 어떻게 검증하나요?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">모든 리뷰는 3회 이상 방문, 38개 항목 평가, 2인 이상 교차 검증을 거칩니다. 데이터는 정기적으로 업데이트됩니다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
-                        특정 업소만 추천하나요?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">아닙니다. 모든 업소를 동일한 기준으로 평가하며, 객관적 데이터에 기반해 장단점을 투명하게 공개합니다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
-                        협찬이나 광고를 받나요?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">받지 않습니다. 모든 콘텐츠는 독립적으로 제작되며, 외부 이해관계에 영향을 받지 않습니다.</div>
-                </div>
-                <div class="faq-item">
-                    <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
-                        어떤 기준으로 평가하나요?
-                        <span>+</span>
-                    </div>
-                    <div class="faq-answer">시설 청결도, 직원 친절도, 가격 대비 서비스, 분위기, 접근성 등 38개 세부 항목을 수치화합니다.</div>
-                </div>
-            </div>
-        </div>
-    
+ <div class="faq">
+ <h2>자주 묻는 질문</h2>
+ <div class="faq-item">
+ <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
+ 리뷰는 어떻게 검증하나요?
+ <span>+</span>
+ </div>
+ <div class="faq-answer">모든 리뷰는 3회 이상 방문, 38개 항목 평가, 2인 이상 교차 검증을 거칩니다. 데이터는 정기적으로 업데이트됩니다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
+ 특정 업소만 추천하나요?
+ <span>+</span>
+ </div>
+ <div class="faq-answer">아닙니다. 모든 업소를 동일한 기준으로 평가하며, 객관적 데이터에 기반해 장단점을 투명하게 공개합니다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
+ 협찬이나 광고를 받나요?
+ <span>+</span>
+ </div>
+ <div class="faq-answer">받지 않습니다. 모든 콘텐츠는 독립적으로 제작되며, 외부 이해관계에 영향을 받지 않습니다.</div>
+ </div>
+ <div class="faq-item">
+ <div class="faq-question" onclick="this.nextElementSibling.classList.toggle('active')">
+ 어떤 기준으로 평가하나요?
+ <span>+</span>
+ </div>
+ <div class="faq-answer">시설 청결도, 직원 친절도, 가격 대비 서비스, 분위기, 접근성 등 38개 세부 항목을 수치화합니다.</div>
+ </div>
+ </div>
+ </div>
+ 
 <div class="seo-visual-divider" role="separator" aria-label="합정 셔츠룸 단골들이 뽑은 핫플 매거진 구분선" style="margin:32px 0;text-align:center;color:#e5e5e0;font-size:0.85rem;letter-spacing:0.5em">◆ ◆ ◆</div>
 </section>
 
-    <footer>
-        <div class="container">
-            <p>© 2025 합정 트렌드 서포터 | 문의: 010-6279-0862</p>
-            <p style="margin-top: 8px;">데이터 기반 리뷰로 신뢰를 전합니다.</p>
-        </div>
-    </footer>
+ <footer>
+ <div class="container">
+ <p>© 2025 합정 트렌드 서포터 | 문의: 010-6279-0862</p>
+ <p style="margin-top: 8px;">데이터 기반 리뷰로 신뢰를 전합니다.</p>
+ </div>
+ </footer>
 
-    <script>
-        document.querySelector('.hamburger').addEventListener('click', function() {
-            document.querySelector('.nav-links').classList.toggle('active');
-        });
-    </script>
+ <script>
+ document.querySelector('.hamburger').addEventListener('click', function() {
+ document.querySelector('.nav-links').classList.toggle('active');
+ });
+ </script>
 </body>
 </html>
